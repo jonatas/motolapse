@@ -9,7 +9,7 @@ Search and exchange the 3 variables to work with your needs,
 
 ### Configure the ULN2003 pins
 
-Change the pins on the following line to configure your own motors. The four respective values is ordered by 1N1,1N2,1N3,1N4.
+Change the pins on the following line to configure your own motor. The four respective values is ordered by 1N1,1N2,1N3,1N4.
 
 ```python
 PINS_ON_ULN = [17,18,23,22]
