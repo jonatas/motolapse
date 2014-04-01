@@ -27,7 +27,9 @@ Configure the degrees per picture taken.
 PICTURE_EACH_HOW_MUCH_DEGREES = 5
 ```
 
+### Install camera package
 
+    sudo apt-get install python-camera
 
 # Run it!
 
