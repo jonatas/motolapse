@@ -29,3 +29,8 @@ PICTURE_EACH_HOW_MUCH_DEGREES = 5
 
 
 
+# Run it!
+
+After all run it using:
+
+`sudo python run.py`
