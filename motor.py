@@ -9,7 +9,6 @@
 from time import sleep
 import RPi.GPIO as GPIO
 import time
-import picamera
 
 
 class Motor(object):
@@ -147,22 +146,11 @@ class Motor(object):
 
 
 if __name__ == "__main__":
-
-
     GPIO.setmode(GPIO.BCM)
     m = Motor([17,18,23,22])
     m.rpm = 1
     print "Pause in seconds: " + `m._T`
-    with picamera.PiCamera() as camera:
-            m.move_to(90)
-	    camera.capture('deg90.jpg')
-            sleep(1)
-            m.move_to(180)
-	    camera.capture('180deg.jpg')
-            sleep(1)
-            m.move_to(270)
-	    camera.capture('270deg.jpg')
-            sleep(1)
-            m.move_to(360)
-	    camera.capture('360deg.jpg')
-    GPIO.cleanup()
+    m.move_to(90)
+    sleep(1)
+    m.move_to(180)
+
