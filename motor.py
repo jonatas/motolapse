@@ -145,12 +145,12 @@ class Motor(object):
             sleep(self._T)
 
 
-if __name__ == "__main__":
-    GPIO.setmode(GPIO.BCM)
-    m = Motor([17,18,23,22])
-    m.rpm = 1
-    print "Pause in seconds: " + `m._T`
-    m.move_to(90)
-    sleep(1)
-    m.move_to(180)
+#if __name__ == "__main__":
+#    GPIO.setmode(GPIO.BCM)
+#    m = Motor([17,18,23,22])
+#    m.rpm = 1
+#    print "Pause in seconds: " + `m._T`
+#    m.move_to(90)
+#    sleep(1)
+#    m.move_to(180)
 
