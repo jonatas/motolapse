@@ -37,8 +37,8 @@ After all run it using:
 
 # References and codes
 
-http://www.raspberrypi-spy.co.uk/2012/07/stepper-motor-control-in-python/
-http://blog.scphillips.com/2012/12/a-python-class-to-move-the-stepper-motor/
-https://pypi.python.org/pypi/picamera/
-http://www.tutorialspoint.com/python/python_while_loop.htm
+* http://www.raspberrypi-spy.co.uk/2012/07/stepper-motor-control-in-python/
+* http://blog.scphillips.com/2012/12/a-python-class-to-move-the-stepper-motor/
+* http://pypi.python.org/pypi/picamera/
+* http://www.tutorialspoint.com/python/python_while_loop.htm
 
