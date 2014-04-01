@@ -1,7 +1,6 @@
 import RPi.GPIO as GPIO
 import picamera
-
-execfile("motor.py")
+from motor import Motor
 
 GPIO.setmode(GPIO.BCM)
 
