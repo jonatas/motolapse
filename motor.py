@@ -48,7 +48,7 @@ class Motor(object):
     def move_to(self, angle):
         """Take the shortest route to a particular angle (degrees)."""
         # Make sure there is a 1:1 mapping between angle and stepper angle
-        target_step_angle = 8 * (int(angle / self.deg_per_step) / 8)
+        target_step_angle = int(8 * (angle / self.deg_per_step / 8))
         steps = target_step_angle - self.step_angle
         steps = (steps % self.steps_per_rev)
         if steps > self.steps_per_rev / 2:
@@ -145,12 +145,12 @@ class Motor(object):
             sleep(self._T)
 
 
-#if __name__ == "__main__":
-#    GPIO.setmode(GPIO.BCM)
-#    m = Motor([17,18,23,22])
-#    m.rpm = 1
-#    print "Pause in seconds: " + `m._T`
-#    m.move_to(90)
-#    sleep(1)
-#    m.move_to(180)
+if __name__ == "__main__":
+    GPIO.setmode(GPIO.BCM)
+    m = Motor([17,18,23,22])
+    m.rpm = 1
+    print "Pause in seconds: " + `m._T`
+    m.move_to(0.5)
+    sleep(1)
+    m.move_to(180)
 
